@@ -1,0 +1,27 @@
+
+<div class="container border shadow p-3 mb-5 my-5 bg-white rounded">
+    <h1>Mini Calculadora</h1>
+<!--Sumar y restar dos numeros-->
+    <div class="container">
+        <div class="row">
+                        <div class="col-6 d-flex align-self-end">
+                            <p>Resultado:{{resultado}}</p>
+                        </div>
+
+                        
+                        <form action="" class="col-6 d-flex flex-column">
+                            <label for="numero1">Numero 1:</label>
+                            <input type="number" name="numero1" id="numero1" [(ngModel)]="numero1">
+                            <label for="numero2">Numero 2:</label>
+                            <input type="number" name="numero2" id="numero2" [(ngModel)]="numero2">
+                            <div class="conatiner">
+                                <button class="btn btn-primary" (click)="restar()">Restar</button>
+                                <button class="btn btn-primary" (click)="sumar()">Sumar</button>
+                            </div>
+                        
+                
+                        </form>
+        </div>
+        
+    </div>
+</div>
